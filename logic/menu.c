@@ -156,9 +156,9 @@ const struct menu menu_L1_Temperature = {
     FUNCTION(mx_temperature),         // sub menu function
     FUNCTION(display_temperature),    // display function
     FUNCTION(update_temperature),     // new display data
-    &menu_L1_Altitude,
+    &menu_L1_Pressure,
 };
-
+/*
 // Line1 - Altitude
 const struct menu menu_L1_Altitude = {
     FUNCTION(sx_altitude),            // direct function
@@ -167,7 +167,7 @@ const struct menu menu_L1_Altitude = {
     FUNCTION(update_time),            // new display data
     &menu_L1_Pressure,
 };
-/*
+
 // Line1 - Heart Rate
 const struct menu menu_L1_Heartrate = {
     FUNCTION(sx_bluerobin),           // direct function
@@ -256,9 +256,9 @@ const struct menu menu_L2_Rf = {
     FUNCTION(dummy),                  // sub menu function
     FUNCTION(display_rf),             // display function
     FUNCTION(update_time),            // new display data
-    &menu_L2_Ppt,
+    &menu_L2_Sync,
 };
-
+/*
 // Line2 - PPT (button events via SimpliciTI)
 const struct menu menu_L2_Ppt = {
     FUNCTION(sx_ppt),                 // direct function
@@ -267,7 +267,7 @@ const struct menu menu_L2_Ppt = {
     FUNCTION(update_time),            // new display data
     &menu_L2_Sync,
 };
-
+*/
 // Line2 - SXNC (synchronization/data download via SimpliciTI)
 const struct menu menu_L2_Sync = {
     FUNCTION(sx_sync),                // direct function

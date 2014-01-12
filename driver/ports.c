@@ -314,7 +314,7 @@ __interrupt void PORT2_ISR(void)
         if (IRQ_TRIGGERED(int_flag, AS_INT_PIN))
                 {
                   // Get data from sensor
-                  if ( is_acceleration_measurement())
+                  //if ( is_acceleration_measurement())
                      request.flag.acceleration_measurement = 1;
                   if ( is_counter_measurement()) {
                      request.flag.counter_measurement = 1;
