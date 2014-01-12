@@ -321,6 +321,7 @@ void init_application(void)
     // ---------------------------------------------------------------------
     // Init pressure sensor
     bmp_ps_init();
+
     // Bosch sensor not found?
     if (!ps_ok)
     {

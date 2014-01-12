@@ -175,15 +175,15 @@ u16 accval;
 
 // *************************************************************************************************
 // @fn          clearalarmData
-// @brief       Resets alarmData to 06:30
+// @brief       Resets alarmData to 08:30
 // @param       none
 // @return      none
 // *************************************************************************************************
 void reset_alarm(void) 
 {
-	// Default alarm time 06:30
+	// Default alarm time 08:30
 	sAlarm.hour   = 8;
-	sAlarm.minute = 0;
+	sAlarm.minute = 30;
         sAlarm.softlen= 30; //30 min
         softalarmzone=0;
         sa_timercounter=0;

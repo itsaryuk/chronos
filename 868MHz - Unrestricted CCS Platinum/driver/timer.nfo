@@ -52,7 +52,7 @@ extern void Timer0_A3_Stop() is called from 0 sites in this file.
 	<NONE>
 
 extern void Timer0_A4_Delay() is called from 0 sites in this file.
-    It appears to be inlineable (size = 59 units)
+    It appears to be inlineable (size = 62 units)
     It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	_enable_interrupts() (1 times)
@@ -153,7 +153,7 @@ extern void Timer0_Init() is called from 0 sites in this file.
 ==============================================================================
 
 extern void Timer0_A4_Delay() is called from 0 sites in this file.
-    It appears to be inlineable (size = 59 units)
+    It appears to be inlineable (size = 62 units)
     It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	<NONE>

@@ -35,7 +35,7 @@ extern void reset_rf() is called from 0 sites in this file.
 	<NONE>
 
 extern void simpliciti_get_ed_data_callback() is called from 0 sites in this file.
-    It appears to be inlineable (size = 120 units)
+    It appears to be inlineable (size = 123 units)
     It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	display_time() (1 times)
@@ -221,7 +221,7 @@ extern void simpliciti_sync_decode_ap_cmd_callback() is called from 0 sites in t
 ==============================================================================
 
 extern void simpliciti_get_ed_data_callback() is called from 0 sites in this file.
-    It appears to be inlineable (size = 120 units)
+    It appears to be inlineable (size = 123 units)
     It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	<NONE>

@@ -17,7 +17,7 @@ extern void display_all_on() is called from 1 sites in this file.
 	<NONE>
 
 extern void test_mode() is called from 0 sites in this file.
-    It appears to be inlineable (size = 320 units)
+    It appears to be inlineable (size = 323 units)
     It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	display_all_on() (1 times)
@@ -102,7 +102,7 @@ extern void display_all_on() is called from 1 sites in this file.
 ==============================================================================
 
 extern void test_mode() is called from 0 sites in this file.
-    It appears to be inlineable (size = 320 units)
+    It appears to be inlineable (size = 323 units)
     It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	display_all_off() (2 times)
