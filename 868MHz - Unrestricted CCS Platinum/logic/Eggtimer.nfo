@@ -1,0 +1,196 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void display_eggtimer() is called from 4 sites in this file.
+    It appears to be inlineable (size = 193 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_char() (12 times)
+	display_symbol() (2 times)
+	display_chars() (2 times)
+
+extern void eggtimer_tick() is called from 0 sites in this file.
+    It appears to be inlineable (size = 257 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	reset_eggtimer() (1 times)
+	stop_eggtimer() (1 times)
+	display_eggtimer() (2 times)
+
+extern unsigned char is_eggtimer() is called from 0 sites in this file.
+    It appears to be inlineable (size = 20 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void mx_eggtimer() is called from 0 sites in this file.
+    It appears to be inlineable (size = 8 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_eggtimer() (1 times)
+	reset_eggtimer() (1 times)
+	set_eggtimer() (1 times)
+	stop_eggtimer() (1 times)
+
+extern void reset_eggtimer() is called from 2 sites in this file.
+    It appears to be inlineable (size = 48 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	memcpy() (1 times)
+
+extern void set_eggtimer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 206 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	set_value() (3 times)
+	display_symbol() (1 times)
+	display_chars() (3 times)
+	int_to_array() (9 times)
+
+extern void start_eggtimer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 17 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_symbol() (1 times)
+	update_eggtimer_timer() (1 times)
+
+extern void stop_eggtimer() is called from 3 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_eggtimer() (1 times)
+	display_symbol() (1 times)
+
+extern void sx_eggtimer() is called from 0 sites in this file.
+    It appears to be inlineable (size = 16 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	stop_eggtimer() (1 times)
+	start_eggtimer() (1 times)
+
+extern void update_eggtimer_timer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 53 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	<NONE>
+
+Address of global variable is never taken:
+	static unsigned char delay$1
+
+
+
+These functions may be recursive:
+	eggtimer_tick()
+	mx_eggtimer()
+	set_eggtimer()
+	sx_eggtimer()
+	stop_eggtimer()
+	display_eggtimer()
+	start_eggtimer()
+
+Making this function inlineable: start_eggtimer()
+
+Making this function inlineable: stop_eggtimer()
+
+These external functions are called but not defined here:
+	memcpy()
+	int_to_array()
+	set_value()
+	display_chars()
+	display_symbol()
+	display_char()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void update_eggtimer_timer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 53 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void start_eggtimer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 17 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	update_eggtimer_timer() (1 times)
+
+==============================================================================
+
+extern void display_eggtimer() is called from 4 sites in this file.
+    It appears to be inlineable (size = 193 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void stop_eggtimer() is called from 3 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_eggtimer() (1 times)
+
+==============================================================================
+
+extern void sx_eggtimer() is called from 0 sites in this file.
+    It appears to be inlineable (size = 16 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	start_eggtimer() (1 times)
+	stop_eggtimer() (1 times)
+
+==============================================================================
+
+extern void set_eggtimer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 206 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void reset_eggtimer() is called from 2 sites in this file.
+    It appears to be inlineable (size = 48 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void mx_eggtimer() is called from 0 sites in this file.
+    It appears to be inlineable (size = 8 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	stop_eggtimer() (1 times)
+	set_eggtimer() (1 times)
+	reset_eggtimer() (1 times)
+	display_eggtimer() (1 times)
+
+==============================================================================
+
+extern unsigned char is_eggtimer() is called from 0 sites in this file.
+    It appears to be inlineable (size = 20 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void eggtimer_tick() is called from 0 sites in this file.
+    It appears to be inlineable (size = 257 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	display_eggtimer() (2 times)
+	stop_eggtimer() (1 times)
+	reset_eggtimer() (1 times)
+
+== END OF INFO OUTPUT==

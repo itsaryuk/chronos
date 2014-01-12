@@ -1,0 +1,46 @@
+//	Copyright (C) 2010 BM innovations GmbH - http://www.bm-innovations.com/ 
+//	 
+//	  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+//	  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+//	  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+//	  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+//	  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+//	  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+//	  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+//	  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+//	  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+//	  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+//	  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// This script programs the watch main and BSL firmware
+// It will break on any error encountered by the programming environment
+//
+// You have to connect eZ430-Chronos watch to USB emulator before running this script
+
+// Test 1:  Init FET
+TEST_START;			          Init FET and identify device for programming;
+MSP430_INIT_FET;
+TEST_EVALUATE;            testresult;==;1;AUTO;BREAK;
+
+// Test 2:  Erase main memory (and keep info memory with calibration values)
+TEST_START;			          Erasing main memory;
+MSP430_ERASE_MAIN_MEMORY;
+TEST_EVALUATE;            testresult;==;1;AUTO;BREAK;
+
+// Test 3: Erase BSL memory
+TEST_START;			          Erasing BSL memory;
+MSP430_ERASE_BSL_MEMORY;
+TEST_EVALUATE;            testresult;==;1;AUTO;BREAK;
+
+// Test 4: Program BSL firmware
+TEST_START;			          Programming BSL firmware;
+MSP430_FLASH_BSL_MEMORY;  firmware/ez430_chronos_rfbsl_868MHz_1_0.txt;
+TEST_EVALUATE;            testresult;==;1;AUTO;BREAK;
+
+// Test 5: Program watch firmware
+TEST_START;			          Programming firmware;
+MSP430_FLASH_MAIN_MEMORY; firmware/ez430_chronos_868MHz.txt;
+TEST_EVALUATE;            testresult;==;1;AUTO;BREAK;
+
+// End of test 
+MSP430_CLOSE_FET

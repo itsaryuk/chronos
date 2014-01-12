@@ -1,0 +1,270 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+Making display_hours1 a function synonym of display_value1
+
+		======File-level Analysis Summary======
+
+
+extern void clear_blink_mem() is called from 0 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void clear_display() is called from 0 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	clear_line() (2 times)
+
+extern void clear_display_all() is called from 0 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	 ? () (2 times)
+	clear_line() (2 times)
+
+extern void clear_line() is called from 4 sites in this file.
+    It appears to be inlineable (size = 34 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_symbol() (6 times)
+	switch_seg() (1 times)
+	display_chars() (1 times)
+
+extern void display_am_pm_symbol() is called from 0 sites in this file.
+    It appears to be inlineable (size = 17 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_symbol() (3 times)
+	is_hour_am() (1 times)
+
+extern void display_char() is called from 1 sites in this file.
+    It appears to be inlineable (size = 84 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	write_lcd_mem() (1 times)
+
+extern void display_chars() is called from 2 sites in this file.
+    It appears to be inlineable (size = 138 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_char() (1 times)
+
+extern void display_hours1() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_value1() (1 times)
+
+extern void display_symbol() is called from 9 sites in this file.
+    It appears to be inlineable (size = 26 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	write_lcd_mem() (1 times)
+
+extern void display_value1() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+	itoa() (1 times)
+
+extern unsigned char *itoa() is called from 1 sites in this file.
+    It appears to be inlineable (size = 111 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	memcpy() (3 times)
+
+extern void lcd_init() is called from 0 sites in this file.
+    It appears to be inlineable (size = 22 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void set_blink_rate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void start_blink() is called from 0 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void stop_blink() is called from 0 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern unsigned char switch_seg() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void write_lcd_mem() is called from 2 sites in this file.
+    It appears to be inlineable (size = 84 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+
+These functions may be recursive:
+	clear_display_all()
+	display_am_pm_symbol()
+
+Making this function inlineable: switch_seg()
+
+These external functions are called but not defined here:
+	memcpy()
+	is_hour_am()
+	 ? ()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void write_lcd_mem() is called from 2 sites in this file.
+    It appears to be inlineable (size = 84 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern unsigned char switch_seg() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void stop_blink() is called from 0 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void start_blink() is called from 0 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void set_blink_rate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void lcd_init() is called from 0 sites in this file.
+    It appears to be inlineable (size = 22 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern unsigned char *itoa() is called from 1 sites in this file.
+    It appears to be inlineable (size = 111 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void display_char() is called from 1 sites in this file.
+    It appears to be inlineable (size = 84 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	write_lcd_mem() (1 times)
+
+==============================================================================
+
+extern void display_chars() is called from 2 sites in this file.
+    It appears to be inlineable (size = 138 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_char() (1 times)
+
+==============================================================================
+
+extern void display_value1() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	itoa() (1 times)
+	display_chars() (1 times)
+
+==============================================================================
+
+extern void display_symbol() is called from 9 sites in this file.
+    It appears to be inlineable (size = 26 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	write_lcd_mem() (1 times)
+
+==============================================================================
+
+extern void display_hours1() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_value1() (1 times)
+
+==============================================================================
+
+extern void display_am_pm_symbol() is called from 0 sites in this file.
+    It appears to be inlineable (size = 17 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_symbol() (3 times)
+
+==============================================================================
+
+extern void clear_line() is called from 4 sites in this file.
+    It appears to be inlineable (size = 34 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+	switch_seg() (1 times)
+	display_symbol() (6 times)
+
+==============================================================================
+
+extern void clear_display_all() is called from 0 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	clear_line() (2 times)
+
+==============================================================================
+
+extern void clear_display() is called from 0 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	clear_line() (2 times)
+
+==============================================================================
+
+extern void clear_blink_mem() is called from 0 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==

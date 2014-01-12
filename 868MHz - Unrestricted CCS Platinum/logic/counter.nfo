@@ -1,0 +1,129 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void display_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 82 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+	int_to_array() (1 times)
+	bmp_as_start() (1 times)
+	display_symbol() (6 times)
+	bmp_as_stop() (1 times)
+
+extern void do_count() is called from 1 sites in this file.
+    It appears to be inlineable (size = 32 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void do_counter_measurement() is called from 0 sites in this file.
+    It appears to be inlineable (size = 133 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	do_count() (1 times)
+	convert_acceleration_value_to_mgrav() (1 times)
+	bmp_as_get_data() (1 times)
+
+extern unsigned char is_counter_measurement() is called from 0 sites in this file.
+    It appears to be inlineable (size = 6 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void mx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void reset_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 10 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void sx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 8 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+
+These functions may be recursive:
+	display_counter()
+	do_counter_measurement()
+
+These external functions are called but not defined here:
+	bmp_as_get_data()
+	convert_acceleration_value_to_mgrav()
+	bmp_as_stop()
+	display_symbol()
+	bmp_as_start()
+	int_to_array()
+	display_chars()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void sx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 8 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void reset_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 10 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void mx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern unsigned char is_counter_measurement() is called from 0 sites in this file.
+    It appears to be inlineable (size = 6 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void do_count() is called from 1 sites in this file.
+    It appears to be inlineable (size = 32 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void do_counter_measurement() is called from 0 sites in this file.
+    It appears to be inlineable (size = 133 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	do_count() (1 times)
+
+==============================================================================
+
+extern void display_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 82 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==

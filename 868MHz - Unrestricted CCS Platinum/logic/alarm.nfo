@@ -1,0 +1,192 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void check_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 37 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void check_soft_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 108 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	soft_alarm_stop() (2 times)
+	soft_alarm_start() (1 times)
+
+extern void display_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 62 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	switch_seg() (3 times)
+	int_to_array() (2 times)
+	display_chars() (2 times)
+	display_symbol() (5 times)
+
+extern void mx_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 140 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	set_value() (3 times)
+	display_symbol() (1 times)
+	display_chars() (4 times)
+	int_to_array() (3 times)
+	clear_display_all() (1 times)
+
+extern void reset_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 28 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void soft_alarm_start() is called from 1 sites in this file.
+    It appears to be inlineable (size = 24 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_symbol() (1 times)
+	bmp_as_start() (1 times)
+	is_acceleration_measurement() (1 times)
+
+extern void soft_alarm_stop() is called from 5 sites in this file.
+    It appears to be inlineable (size = 19 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	reset_acceleration() (1 times)
+	bmp_as_stop() (1 times)
+	is_acceleration_measurement() (1 times)
+	display_symbol() (1 times)
+
+extern void stop_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 16 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	stop_buzzer() (1 times)
+
+extern void sx_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 67 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	soft_alarm_stop() (3 times)
+
+extern void update_soft_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 88 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	convert_acceleration_value_to_mgrav_sign() (3 times)
+
+
+These functions may be recursive:
+	check_soft_alarm()
+	display_alarm()
+	mx_alarm()
+	soft_alarm_start()
+	stop_alarm()
+	sx_alarm()
+	soft_alarm_stop()
+	update_soft_alarm()
+
+Making this function inlineable: soft_alarm_stop()
+
+These external functions are called but not defined here:
+	convert_acceleration_value_to_mgrav_sign()
+	stop_buzzer()
+	bmp_as_stop()
+	reset_acceleration()
+	is_acceleration_measurement()
+	bmp_as_start()
+	clear_display_all()
+	set_value()
+	display_symbol()
+	display_chars()
+	int_to_array()
+	switch_seg()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void update_soft_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 88 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void soft_alarm_stop() is called from 5 sites in this file.
+    It appears to be inlineable (size = 19 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void sx_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 67 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	soft_alarm_stop() (3 times)
+
+==============================================================================
+
+extern void stop_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 16 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void soft_alarm_start() is called from 1 sites in this file.
+    It appears to be inlineable (size = 24 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void reset_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 28 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void mx_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 140 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void display_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 62 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void check_soft_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 108 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	soft_alarm_start() (1 times)
+	soft_alarm_stop() (2 times)
+
+==============================================================================
+
+extern void check_alarm() is called from 0 sites in this file.
+    It appears to be inlineable (size = 37 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==
