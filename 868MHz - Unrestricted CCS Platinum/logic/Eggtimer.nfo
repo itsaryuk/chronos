@@ -73,7 +73,7 @@ extern void sx_eggtimer() is called from 0 sites in this file.
 
 extern void update_eggtimer_timer() is called from 1 sites in this file.
     It appears to be inlineable (size = 53 units)
-    It has 4 non-trivial scope blocks nested 4 deep.
+    It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	<NONE>
 
@@ -111,7 +111,7 @@ These external functions are called but not defined here:
 
 extern void update_eggtimer_timer() is called from 1 sites in this file.
     It appears to be inlineable (size = 53 units)
-    It has 4 non-trivial scope blocks nested 4 deep.
+    It has 3 non-trivial scope blocks nested 3 deep.
     It calls these functions:
 	<NONE>
 

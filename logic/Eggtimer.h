@@ -60,7 +60,7 @@
 extern void start_eggtimer(void);
 extern void stop_eggtimer(void);
 extern void reset_eggtimer(void);
-extern u8 is_eggtimer(void);
+//extern u8 is_eggtimer(void);
 extern void eggtimer_tick(void);
 extern void update_eggtimer_timer(void);
 extern void mx_eggtimer(u8 line);

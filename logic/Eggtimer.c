@@ -91,30 +91,31 @@ struct eggtimer seggtimer;
 void update_eggtimer_timer(void)
 {
     //Make sure eggtimer is running before we do anything else (this might slightly mess up my timing, but oh well)
-  if(seggtimer.state == EGGTIMER_RUN){
+  if(seggtimer.state != EGGTIMER_RUN) return;
 	u16 value;
 
 	// Load CCR register with next capture time
 	if (seggtimer.viewStyle == DISPLAY_DEFAULT_VIEW) 
 	{
-		// Timer interrupts occur every 32768/100 = 328 ACLK
-		// --> eggtimer runs too slow (1 sec nominal != 100 interupts * 328 ACLK = 32800 ACLK = 1.00098 sec)
-		// --> ideally correct timer value every 10 ticks by (32768 - 32800)/10 = 3.2
-		// --> correct timer value every 10Hz by 3, 
-		// --> correct timer value every 1Hz correct by 5
-		value = TA0CCR2 + EGGTIMER_100HZ_TICK;
+        // Timer interrupts occur every 32768/100 = 328 ACLK
+        // --> stopwatch runs too slow (1 sec nominal != 100 interupts * 328 ACLK = 32800 ACLK =
+        // 1.00098 sec)
+        // --> ideally correct timer value every 10 ticks by (32768 - 32800)/10 = 3.2
+        // --> correct timer value every 10Hz by 3,
+        // --> correct timer value every 1Hz correct by 5
+        value = TA0CCR2 + EGGTIMER_100HZ_TICK;
 
-		if (seggtimer.swtIs1Hz) 
-		{
-			value -= 5;
-			seggtimer.swtIs1Hz = 0;	
-			seggtimer.swtIs10Hz = 0;	
-		}
-		else if (seggtimer.swtIs10Hz) 
-		{
-			value -= 3;
-			seggtimer.swtIs10Hz = 0;	
-		}
+        if (seggtimer.swtIs1Hz)
+        {
+            value -= 5;
+            seggtimer.swtIs1Hz = 0;
+            seggtimer.swtIs10Hz = 0;
+        }
+        else if (seggtimer.swtIs10Hz)
+        {
+            value -= 3;
+            seggtimer.swtIs10Hz = 0;
+        }
 	}
 	else // Alternative view
 	{
@@ -124,7 +125,6 @@ void update_eggtimer_timer(void)
 	
 	// Update CCR
 	TA0CCR2 = value;   
-  }
 }
 
 
@@ -249,7 +249,7 @@ void eggtimer_tick(void)
         
 	// Always set display update flag (Only used in two places for no good reason, but whatever)
         //seggtimer.update_eggtimer = 1;
-        display.flag.update_stopwatch = 1;
+        display.flag.update_eggtimer = 1;
   }
 }
 
@@ -271,7 +271,7 @@ void reset_eggtimer(void)
 	seggtimer.swtIs1Hz  	= 0;		// 1Hz trigger
 	
 	// Init eggtimer state 'Off'
-	seggtimer.state 	  	= EGGTIMER_STOP;		
+	seggtimer.state 	  	= EGGTIMER_STOP;
 	
 	// Default display style is MM:SS:HH
         if(seggtimer.defaultTime[0]=='0'&&
@@ -409,7 +409,7 @@ void display_eggtimer(u8 line, u8 update)
 	if (update == DISPLAY_LINE_UPDATE_PARTIAL)
 	{	
 //		if (seggtimer.update_eggtimer)
-                if (display.flag.update_stopwatch)
+                if (display.flag.update_eggtimer)
 		{
 			if (seggtimer.viewStyle == DISPLAY_DEFAULT_VIEW)
 			{

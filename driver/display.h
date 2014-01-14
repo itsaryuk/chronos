@@ -69,6 +69,7 @@ typedef union
         // Logic module data update flags
         u16 update_time : 1;            // 1 = Time was updated
         u16 update_stopwatch : 1;       // 1 = Stopwatch was updated
+        u16 update_eggtimer : 1;       // 1 = eggtimer was updated
         u16 update_temperature : 1;     // 1 = Temperature was updated
         u16 update_battery_voltage : 1; // 1 = Battery voltage was updated
         u16 update_date : 1;            // 1 = Date was updated

@@ -115,7 +115,7 @@ u8 update_acceleration(void)
 u8 update_eggtimer(void)
 {
 //      return (seggtimer.update_eggtimer);
-        return (display.flag.update_stopwatch);
+        return (display.flag.update_eggtimer);
 }
 
 u8 update_counter(void)

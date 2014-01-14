@@ -81,6 +81,7 @@ struct stopwatch sStopwatch;
 // *************************************************************************************************
 void update_stopwatch_timer(void)
 {
+	if (sStopwatch.state != STOPWATCH_RUN) return;
     u16 value;
 
     // Load CCR register with next capture time
