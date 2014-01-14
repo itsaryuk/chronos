@@ -201,8 +201,9 @@ const struct menu menu_L1_Counter =
    FUNCTION( mx_counter ),
    FUNCTION( display_counter ),
    FUNCTION( update_counter ),
-   &menu_L1_Acceleration,
+   &menu_L1_Time,
 };
+/*
 // Line1 - Acceleration
 const struct menu menu_L1_Acceleration = {
     FUNCTION(sx_acceleration),        // direct function
@@ -211,7 +212,7 @@ const struct menu menu_L1_Acceleration = {
     FUNCTION(update_acceleration),    // new display data
     &menu_L1_Time,
 };
-
+*/
 // Line2 - Date
 const struct menu menu_L2_Date = {
     FUNCTION(sx_date),                // direct function
